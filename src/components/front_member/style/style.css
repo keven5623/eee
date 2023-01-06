@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "interRegular";
+  src: url(./font/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "interBold";
+  src: url(./font/Inter-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "intreRegular", "Noto Sans TC", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: #1d1f27;
+}
+
+nav {
+  width: 100%;
+  height: 88px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav input {
+  background-color: #44464f;
+  width: 27vw;
+  height: 48px;
+  padding: 0 0 0 56px;
+  color: #9d9faa;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  border: none;
+  background-image: url("../img/searchIcon.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 16px;
+}
+nav a {
+  text-decoration: none;
+  color: #8895ff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.15em;
+}
+nav a:hover {
+  color: #4967ff;
+}
+nav a svg {
+  padding-top: 4px;
+  fill: #8895ff;
+}
+nav a svg:hover {
+  fill: #4967ff;
+}
+nav .ant-dropdown-link img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+nav .loginMember {
+  color: #4967ff;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 20px;
+}
+nav .menuItem {
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+.content .contentDiv {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  margin-top: 5%;
+}
+.content .contentDiv img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .contentDiv .starIcon {
+  color: white;
+  font-size: 30px;
+  margin-left: 8px;
+}
+
+.frontFooter {
+  background-color: #000000;
+  width: 100%;
+  height: 192px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.frontFooter p {
+  color: #44464f;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+}
+.frontFooter img {
+  padding-left: 9vw;
+}
+.frontFooter .contactIconBox {
+  padding-right: 9vw;
+}
+.frontFooter .contactIconBox svg path {
+  fill: #44464f;
+  cursor: pointer;
+}
+.frontFooter .contactIconBox svg:hover {
+  fill: #6f717b;
+}
+.frontFooter .contactIconBox :first-child {
+  padding-right: 24px;
+}
+.frontFooter .contactIconBox :last-child {
+  padding-left: 24px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,162 @@
+$pramaryDarker: #000000;
+$primary: #1d1f27;
+$primaryLighter: #44464f;
+$primaryLightest: #6f717b;
+$primaryLightestest: #9d9faa;
+
+$blueDarker: #003dcb;
+$blue: #4967ff;
+$blueLighter: #8895ff;
+
+$greenDarker: #00b114;
+$green: #38e54d;
+
+$redDarker: #aa003b;
+$red: #e23965;
+
+$yellow: #e0e03b;
+
+$white: #ffffff;
+
+@font-face {
+  font-family: "interRegular";
+  src: url(./font/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "interBold";
+  src: url(./font/Inter-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "intreRegular", "Noto Sans TC", sans-serif;
+  user-select: none;
+}
+
+body {
+  background-color: $primary;
+}
+
+nav {
+  width: 100%;
+  height: 88px;
+  background-color: $pramaryDarker;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  input {
+    background-color: $primaryLighter;
+    width: 27vw;
+    height: 48px;
+    padding: 0 0 0 56px;
+    color: $primaryLightestest;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    border: none;
+    background-image: url("../img/searchIcon.png");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 16px;
+  }
+  a {
+    text-decoration: none;
+    color: $blueLighter;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.15em;
+    &:hover {
+      color: $blue;
+    }
+    svg {
+      padding-top: 4px;
+      fill: $blueLighter;
+      &:hover {
+        fill: $blue;
+      }
+    }
+  }
+  
+  .ant-dropdown-link{
+    img{
+       object-fit:cover ;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+  }
+
+  .loginMember{
+    color: $blue;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 20px;
+  }
+
+  .menuItem{
+    color: white;
+  }
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  .contentDiv{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    margin-top: 5%;
+    img{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .starIcon{
+      color: white;
+      font-size: 30px;
+      margin-left: 8px;
+    }
+  }
+  
+}
+
+.frontFooter {
+  background-color: $pramaryDarker;
+  width: 100%;
+  height: 192px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: $primaryLighter;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.15em;
+  }
+  img {
+    padding-left: 9vw;
+  }
+  .contactIconBox {
+    svg {
+      path {
+        fill: $primaryLighter;
+        cursor: pointer;
+      }
+      &:hover {
+        fill: $primaryLightest;
+      }
+    }
+    padding-right: 9vw;
+    :first-child {
+      padding-right: 24px;
+    }
+    :last-child {
+      padding-left: 24px;
+    }
+  }
+}
